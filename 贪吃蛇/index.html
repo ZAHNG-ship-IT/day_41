@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>贪吃蛇游戏</h1>
+        <div class="game-stats">
+            <div class="score-container">
+                <span>得分: <span id="score">0</span></span>
+            </div>
+            <div class="level-container">
+                <span>难度级别: <span id="level">1</span></span>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button id="startBtn">开始游戏</button>
+            <button id="pauseBtn">暂停</button>
+        </div>
+        <div class="instructions">
+            <h2>游戏说明</h2>
+            <p>使用键盘的方向键 ↑ ↓ ← → 控制蛇的移动方向。</p>
+            <p>在移动设备上，可以点击屏幕四周来改变方向。</p>
+            <p>吃到食物会增加得分，撞到墙壁或自己的身体则游戏结束。</p>
+            <p>蛇的长度达到15时，游戏难度会提升，会出现障碍物。</p>
+            <p>难度达到10级后，游戏将启动自动驾驶模式。</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
